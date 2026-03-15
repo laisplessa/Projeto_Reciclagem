@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Início</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Anton&family=Cormorant+SC:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="top-menu">
             <p onclick="location.reload()">Recicla Joinville</p>
             <nav>
-                <a>Home</a>
-                <a>Pontos de Coleta</a>
-                <a>Solicitar Coleta</a>
+                <a href="#home">Home</a>
+                <a href="#pontos">Pontos de Coleta</a>
+                <a href="#solicitar-coleta">Solicitar Coleta</a>
                 <a>Denúncias</a>
             </nav>
         </div>
@@ -25,7 +25,7 @@
 
     <main>
         <div class="container">
-            <h1>
+            <h1 id="home">
                 Recicle com Consciência
             </h1>
             <p>Encontre pontos de coleta seletiva perto de você. Separe o lixo corretamente e contribua para um planeta mais limpo.</p>
@@ -50,11 +50,169 @@
                 </div>
                 <div class="card-3">
                     <img src="./img/image4.jpg" alt="">
-                    <h3>Denúncias de Descartes Irregulares</h3>
+                    <h3 id="pontos">Denúncias de Descartes Irregulares</h3>
                     <p>Denuncie pontos de descartes irregulares para as medidas necessárias serem realizadas.</p>
                 </div>
             </div>
+            
+            <div class="pontos-coleta">
+                <h1>Pontos de Coletas</h1>
+                <p>Insira o seu bairro e encontre o ponto mais perto de você!</p>
+    
+                <div class="principal-group">
+                    <div class="group-selection-bairro">
+                        <label for="bairro">Bairro</label>
+                        <div class="select-wrapper">
+                        <select name="bairro" id="bairro">
+                            <option value="" disabled selected>Selecione um bairro</option>
+                            <option value="Adhemar Garcia">Adhemar Garcia</option>
+                            <option value="América">América</option>
+                            <option value="Anita Garibaldi">Anita Garibaldi</option>
+                            <option value="Atiradores">Atiradores</option>
+                            <option value="Aventureiro">Aventureiro</option>
+                            <option value="Boa Vista">Boa Vista</option>
+                            <option value="Boehmerwald">Boehmerwald</option>
+                            <option value="Bom Retiro">Bom Retiro</option>
+                            <option value="Bucarein">Bucarein</option>
+                            <option value="Centro">Centro</option>
+                            <option value="Comasa">Comasa</option>
+                            <option value="Costa e Silva">Costa e Silva</option>
+                            <option value="Dona Francisca">Dona Francisca</option>
+                            <option value="Espinheiros">Espinheiros</option>
+                            <option value="Fátima">Fátima</option>
+                            <option value="Floresta">Floresta</option>
+                            <option value="Glória">Glória</option>
+                            <option value="Guanabara">Guanabara</option>
+                            <option value="Iririú">Iririú</option>
+                            <option value="Itaum">Itaum</option>
+                            <option value="Itinga">Itinga</option>
+                            <option value="Jardim Iririú">Jardim Iririú</option>
+                            <option value="Jardim Paraíso">Jardim Paraíso</option>
+                            <option value="Jardim Sofia">Jardim Sofia</option>
+                            <option value="Jarivatuba">Jarivatuba</option>
+                            <option value="Jativoca">Jativoca</option>
+                            <option value="João Costa">João Costa</option>
+                            <option value="Morro do Meio">Morro do Meio</option>
+                            <option value="Nova Brasília">Nova Brasília</option>
+                            <option value="Paranaguamirim">Paranaguamirim</option>
+                            <option value="Parque Guarani">Parque Guarani</option>
+                            <option value="Petrópolis">Petrópolis</option>
+                            <option value="Pirabeiraba">Pirabeiraba</option>
+                            <option value="Profipo">Profipo</option>
+                            <option value="Rio Bonito">Rio Bonito</option>
+                            <option value="Saguaçu">Saguaçu</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="Santo Antônio">Santo Antônio</option>
+                            <option value="São Marcos">São Marcos</option>
+                            <option value="Ulysses Guimarães">Ulysses Guimarães</option>
+                            <option value="Vila Cubatão">Vila Cubatão</option>
+                            <option value="Vila Nova">Vila Nova</option>
+                            <option value="Zona Industrial Norte">Zona Industrial Norte</option>
+                            <option value="Zona Industrial Tupy">Zona Industrial Tupy</option>
+                        </select>
+                        </div>
+                    </div>
+                    
+                    <div class="group-selection-tipo-produto">
+                        <label for="tipo-produto">Tipo de Produto</label>
+                        <div class="select-wrapper">
+                        <select name="tipo-produto" id="tipo-produto">
+                            <option value="" disabled selected>Selecione o tipo de produto</option>
+                            <option value="pilhas-baterias">Pilhas e Baterias</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="lampadas">Lâmpadas</option>
+                            <option value="oleo-cozinha">Óleo de Cozinha</option>
+                            <option value="medicamentos">Medicamentos</option>
+                            <option value="papel">Papel</option>
+                            <option value="plastico">Plástico</option>
+                            <option value="vidro">Vidro</option>
+                            <option value="metal">Metal</option>
+                            <option value="roupas">Roupas e Têxteis</option>
+                            <option value="entulho">Entulho</option>
+                            <option value="pneus">Pneus</option>
+                            <option value="organico">Resíduo Orgânico</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-buscar" onclick="buscar()">
+                  <i class="fa-solid fa-magnifying-glass"></i> Buscar Pontos
+                </button>
+
+                <div class="cards-grid">
+ 
+                  <div class="rc">
+                    <div class="rc-img"><i class="fa-solid fa-recycle rc-icon"></i><span class="rc-bairro-badge">Centro</span></div>
+                    <div class="rc-body">
+                      <h3 class="rc-nome">Prefeitura de Joinville</h3>
+                      <p class="rc-end"><i class="fa-solid fa-location-dot"></i>Av. Hermann August Lepper, 10</p>
+                      <p class="rc-horario"><i class="fa-solid fa-clock"></i>Seg–Sex: 08h às 18h</p>
+                      <div class="rc-tags"><span class="rc-tag">📄 Papel</span><span class="rc-tag">♻️ Plástico</span><span class="rc-tag">🍶 Vidro</span><span class="rc-tag">🔩 Metal</span><span class="rc-tag">🔋 Pilhas</span></div>
+                    </div>
+                  </div>
+ 
+                  <div class="rc">
+                    <div class="rc-img"><i class="fa-solid fa-recycle rc-icon"></i><span class="rc-bairro-badge">Costa e Silva</span></div>
+                    <div class="rc-body">
+                      <h3 class="rc-nome">PEV — URO Centro-Norte</h3>
+                      <p class="rc-end"><i class="fa-solid fa-location-dot"></i>Rua Guilherme, 604</p>
+                      <p class="rc-horario"><i class="fa-solid fa-clock"></i>Seg–Sex: 08h às 17h</p>
+                      <div class="rc-tags"><span class="rc-tag">💻 Eletrônicos</span><span class="rc-tag">🔋 Pilhas</span></div>
+                    </div>
+                  </div>
+ 
+                  <div class="rc">
+                    <div class="rc-img"><i class="fa-solid fa-recycle rc-icon"></i><span class="rc-bairro-badge">Paranaguamirim</span></div>
+                    <div class="rc-body">
+                      <h3 class="rc-nome">PEV — URO Sudeste</h3>
+                      <p class="rc-end"><i class="fa-solid fa-location-dot"></i>Rua Ana Maria R. de Souza, 59</p>
+                      <p class="rc-horario"><i class="fa-solid fa-clock"></i>Seg–Sex: 08h às 17h</p>
+                      <div class="rc-tags"><span class="rc-tag">💻 Eletrônicos</span><span class="rc-tag">🔋 Pilhas</span><span class="rc-tag">🛞 Pneus</span></div>
+                    </div>
+                  </div>
+ 
+                  <div class="rc">
+                    <div class="rc-img"><i class="fa-solid fa-recycle rc-icon"></i><span class="rc-bairro-badge">Boa Vista</span></div>
+                    <div class="rc-body">
+                      <h3 class="rc-nome">Policlínica do Comasa</h3>
+                      <p class="rc-end"><i class="fa-solid fa-location-dot"></i>Rua Ponte Serrada, 75</p>
+                      <p class="rc-horario"><i class="fa-solid fa-clock"></i>Seg–Sex: 07h às 18h</p>
+                      <div class="rc-tags"><span class="rc-tag">💊 Medicamentos</span><span class="rc-tag">📄 Papel</span><span class="rc-tag">♻️ Plástico</span></div>
+                    </div>
+                  </div>
+
+                  
+ 
+ 
+                </div>
+
+
+            </div>
         </div>
+        
+        <div class="solicitar">
+            <h1 id="solicitar-coleta">Solicitar Coleta</h1>
+            <p>Preencha o formulário para solicitar uma coleta de produtos de grande porte na sua casa!</p>
+            <form>
+                <label for="nome">Nome Completo do Solicitante</label>
+                <input type="text" name="nome" placeholder="Insira o Nome Completo">
+                
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" placeholder="Insira o CPF">
+                
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" placeholder="Insira o Endereço Completo">
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" placeholder="Descreva aqui de forma detalhada cada produto a ser coletado"></textarea>
+
+                <input type="submit" value="Enviar Solicitação">
+            </form>
+        </div>
+            
+
+        
     </main>
 
     <footer>
@@ -63,7 +221,6 @@
             3435-8987
         </p>
     </footer>
-
-        
+    
 </body>
 </html>

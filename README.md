@@ -14,15 +14,15 @@ A proposta do projeto é reunir essas informações em um único lugar, de forma
 
 🎯 Objetivos
 
-Informar a população sobre locais corretos de descarte de resíduos.
+- Informar a população sobre locais corretos de descarte de resíduos.
 
-Permitir que o usuário pesquise pontos de coleta por bairro ou tipo de material.
+- Permitir que o usuário pesquise pontos de coleta por bairro ou tipo de material.
 
-Possibilitar a solicitação de coleta de itens grandes, como móveis e eletrodomésticos.
+- Possibilitar a solicitação de coleta de itens grandes, como móveis e eletrodomésticos.
 
-Permitir o registro de denúncias de descarte irregular, com foto e descrição.
+- Permitir o registro de denúncias de descarte irregular, com foto e descrição.
 
-Oferecer uma interface simples e fácil de usar.
+- Oferecer uma interface simples e fácil de usar.
 
 
 
@@ -30,19 +30,20 @@ Oferecer uma interface simples e fácil de usar.
 
 O sistema possui as seguintes funcionalidades principais:
 
-Visualização de informações sobre descarte correto.
+- Visualização de informações sobre descarte correto.
 
-Busca de pontos de coleta por bairro.
+- Busca de pontos de coleta por bairro.
 
-Busca de pontos de coleta por tipo de material.
+- Busca de pontos de coleta por tipo de material.
 
-Formulário para solicitação de coleta de itens grandes.
+- Formulário para solicitação de coleta de itens grandes.
 
-Formulário para denúncia de descarte irregular com imagem.
+- Formulário para denúncia de descarte irregular com imagem.
 
-Exibição de mensagens de sucesso após envio de formulários.
+- Exibição de mensagens de sucesso após envio de formulários.
 
-Exibição de contato telefônico no rodapé do site.
+- Exibição de contato telefônico no rodapé do site.
+
 
 🖥️ Estrutura da Landing Page
 

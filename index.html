@@ -8,17 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Anton&family=Cormorant+SC:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/reciclar.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="top-menu">
+            <i class="fa-solid fa-recycle"></i>
             <p onclick="location.reload()">Recicla Joinville</p>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#pontos">Pontos de Coleta</a>
                 <a href="#solicitar-coleta">Solicitar Coleta</a>
-                <a>Denúncias</a>
+                <a href="#denunciar-descarte">Denúncias</a>
             </nav>
         </div>
     </header>
@@ -29,11 +32,11 @@
                 Recicle com Consciência
             </h1>
             <p>Encontre pontos de coleta seletiva perto de você. Separe o lixo corretamente e contribua para um planeta mais limpo.</p>
-            <input type="button" value="Encontre Aqui">
+            <a href="#pontos" style="text-decoration: none;"><input type="button" value="Encontre Aqui"></a>
 
 
             <div class="image">
-                <img src="./img/image1.png" alt="">
+                <img src="./img/image4.png" alt="">
             </div>
 
             <h1 class="offer-title">O que oferecemos</h1>
@@ -50,8 +53,8 @@
                 </div>
                 <div class="card-3">
                     <img src="./img/image4.jpg" alt="">
-                    <h3 id="pontos">Denúncias de Descartes Irregulares</h3>
-                    <p>Denuncie pontos de descartes irregulares para as medidas necessárias serem realizadas.</p>
+                    <h3>Denúncias de Descartes Irregulares</h3>
+                    <p id="pontos">Denuncie pontos de descartes irregulares para as medidas necessárias serem realizadas.</p>
                 </div>
             </div>
             
@@ -63,7 +66,7 @@
                     <div class="group-selection-bairro">
                         <label for="bairro">Bairro</label>
                         <div class="select-wrapper">
-                        <select name="bairro" id="bairro">
+                        <select name="bairro">
                             <option value="" disabled selected>Selecione um bairro</option>
                             <option value="Adhemar Garcia">Adhemar Garcia</option>
                             <option value="América">América</option>
@@ -178,12 +181,12 @@
                       <h3 class="rc-nome">Policlínica do Comasa</h3>
                       <p class="rc-end"><i class="fa-solid fa-location-dot"></i>Rua Ponte Serrada, 75</p>
                       <p class="rc-horario"><i class="fa-solid fa-clock"></i>Seg–Sex: 07h às 18h</p>
-                      <div class="rc-tags"><span class="rc-tag">💊 Medicamentos</span><span class="rc-tag">📄 Papel</span><span class="rc-tag">♻️ Plástico</span></div>
+                      <div class="rc-tags" id="bairro"><span class="rc-tag">💊 Medicamentos</span><span class="rc-tag">📄 Papel</span><span class="rc-tag">♻️ Plástico</span></div>
                     </div>
                   </div>
 
                   
- 
+                  
  
                 </div>
 
@@ -194,21 +197,54 @@
         <div class="solicitar">
             <h1 id="solicitar-coleta">Solicitar Coleta</h1>
             <p>Preencha o formulário para solicitar uma coleta de produtos de grande porte na sua casa!</p>
-            <form>
+            <form action="solicitacao_enviada.html">
                 <label for="nome">Nome Completo do Solicitante</label>
-                <input type="text" name="nome" placeholder="Insira o Nome Completo">
+                <input type="text" name="nome" placeholder="Insira o Nome Completo" required>
                 
                 <label for="cpf">CPF</label>
-                <input type="text" name="cpf" placeholder="Insira o CPF">
+                <input type="text" name="cpf" placeholder="Insira o CPF" required>
                 
                 <label for="endereco">Endereço</label>
-                <input type="text" name="endereco" placeholder="Insira o Endereço Completo">
+                <input type="text" name="endereco" placeholder="Insira o Endereço Completo" required>
 
                 <label for="descricao">Descrição</label>
-                <textarea id="descricao" name="descricao" placeholder="Descreva aqui de forma detalhada cada produto a ser coletado"></textarea>
+                <textarea id="descricao" name="descricao" placeholder="Descreva aqui de forma detalhada cada produto a ser coletado" required></textarea>
 
                 <input type="submit" value="Enviar Solicitação">
             </form>
+        </div>
+
+        <div class="denunciar">
+            <h1 id="denunciar-descarte">Denunciar Descarte Irregular</h1>
+            <p>Preencha o formulário para denunciar um descarte irregular que está ocorrendo na cidade.</p>
+
+            <form action="denuncia_enviada.html">
+                <label for="nome">Nome (caso queira se identificar)</label>
+                <input type="text" name="nome" placeholder="Insira o Nome Completo">
+                
+                <label for="endereco">Endereço que está ocorrendo o descarte irregular</label>
+                <input type="text" name="endereco" placeholder="Insira o endereço completo" required>
+                
+                <div class="upload-box">
+                    <span class="upload-label-text">Anexe fotos do descarte irregular ou do local</span>
+                    <div class="upload-row">
+                        <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2 4.61004V13.4989C13.2 14.2457 12.4627 14.8489 11.55 14.8489C10.6373 14.8489 9.9 14.2457 9.9 13.4989V4.61004L7.76531 6.3566C7.12078 6.88394 6.07406 6.88394 5.42953 6.3566C4.785 5.82926 4.785 4.97285 5.42953 4.44551L10.3795 0.395508C11.0241 -0.131836 12.0708 -0.131836 12.7153 0.395508L17.6653 4.44551C18.3098 4.97285 18.3098 5.82926 17.6653 6.3566C17.0208 6.88394 15.9741 6.88394 15.3295 6.3566L13.2 4.61004ZM11.55 16.8739C13.8291 16.8739 15.675 15.3636 15.675 13.4989H19.8C21.6202 13.4989 23.1 14.7097 23.1 16.1989V17.5489C23.1 19.0382 21.6202 20.2489 19.8 20.2489H3.3C1.47984 20.2489 0 19.0382 0 17.5489V16.1989C0 14.7097 1.47984 13.4989 3.3 13.4989H7.425C7.425 15.3636 9.27094 16.8739 11.55 16.8739ZM18.975 17.8864C19.6608 17.8864 20.2125 17.435 20.2125 16.8739C20.2125 16.3129 19.6608 15.8614 18.975 15.8614C18.2892 15.8614 17.7375 16.3129 17.7375 16.8739C17.7375 17.435 18.2892 17.8864 18.975 17.8864Z" fill="#818181"/>
+                            </svg>
+                            <span class="upload-placeholder">Anexe aqui</span>
+                        </div>
+                        <input type="file" id="fileInput" multiple accept="image/*" required>
+                        <div id="preview-fotos" class="preview-fotos"></div>
+                    </div>
+                </div>
+
+                
+
+                <input type="submit" value="Enviar Denúncia">
+            </form>
+            
+            
         </div>
             
 
@@ -221,6 +257,30 @@
             3435-8987
         </p>
     </footer>
-    
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        fileInput.addEventListener('change', function () {
+            const preview = document.getElementById('preview-fotos');
+            preview.innerHTML = '';
+            [...this.files].forEach(file => {
+                const reader = new FileReader();
+                reader.onload = e => {
+                    const wrap = document.createElement('div');
+                    wrap.className = 'preview-item';
+                    wrap.innerHTML = `
+                        <img src="${e.target.result}" alt="${file.name}">
+                        <button type="button" onclick="removePreview(this, '${file.name}')">✕</button>
+                    `;
+                    preview.appendChild(wrap);
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+
+        function removePreview(btn, name) {
+            btn.parentElement.remove();
+        }
+    </script>
 </body>
 </html>

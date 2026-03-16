@@ -4,11 +4,13 @@
 
 Sistema web desenvolvido como projeto da disciplina Fábrica de Software da Universidade da Região de Joinville (Univille), com o objetivo de facilitar o descarte correto de resíduos na cidade de Joinville.
 
+
 📌 Sobre o Projeto
 
 O Recicla Joinville é uma landing page informativa que ajuda os cidadãos a encontrar locais corretos para descarte de resíduos, solicitar coleta de itens grandes e denunciar pontos de descarte irregular.
 
 A proposta do projeto é reunir essas informações em um único lugar, de forma simples e acessível, incentivando práticas sustentáveis e contribuindo para uma cidade mais limpa.
+
 
 🎯 Objetivos
 
@@ -22,17 +24,7 @@ Permitir o registro de denúncias de descarte irregular, com foto e descrição.
 
 Oferecer uma interface simples e fácil de usar.
 
-👥 Público-Alvo
 
-O sistema é destinado a:
-
-Moradores que precisam descartar resíduos corretamente.
-
-Pessoas que desejam solicitar coleta de objetos grandes.
-
-Cidadãos que querem denunciar descarte irregular.
-
-A população em geral que busca informações sobre reciclagem.
 
 ⚙️ Funcionalidades
 
@@ -66,12 +58,7 @@ Denúncias – Formulário para denunciar descarte irregular.
 
 Contato – Informações de telefone.
 
-🎨 Protótipo
 
-O protótipo das telas foi desenvolvido no Figma.
-
-🔗 Acesse o protótipo:
-https://www.figma.com/proto/FxrPyjxi4w17rIs5CqsPhx/Reciclagem
 
 📚 Projeto Acadêmico
 
